@@ -1,0 +1,28 @@
+﻿<script type="text/html" id="personDetailsViewerComponentTemplate">
+    <div class="person-details">
+        <div class="col-md-7">
+            <div class="person-details__avatar">
+                <img data-bind="attr: { 'src': avatarUrl }" />
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="person-details__bio">
+                <div class="person-details__bio--full-name">
+                    <span data-bind="text: fullName"></span>
+                </div>
+                <div class="person-details__bio--badges">
+                </div>
+                <div class="person-details__bio--statistics">
+                    <div>
+                        <span>Tracks found: </span>
+                        <span data-bind="text: totalTracksCount"></span>
+                    </div>
+                    <div>
+                        <span>Tracks analyzed: </span>
+                        <span data-bind="text: analyzedTracksCount"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

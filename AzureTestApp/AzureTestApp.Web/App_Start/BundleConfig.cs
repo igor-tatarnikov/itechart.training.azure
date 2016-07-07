@@ -1,11 +1,9 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace AzureTestApp.Web
 {
     public class BundleConfig
     {
-        // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
@@ -14,8 +12,6 @@ namespace AzureTestApp.Web
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
@@ -26,6 +22,25 @@ namespace AzureTestApp.Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/ko")
+                .Include("~/Scripts/knockout-{version}.js"));
+
+
+            bundles.Add(new ScriptBundle("~/bundles/azureTestApp")
+                .Include("~/Scripts/custom/models/person/basePersonModel.js")
+
+                .Include("~/Scripts/custom/models/person/personListItem.js")
+                .Include("~/Scripts/custom/components/person/personList.js")
+
+                .Include("~/Scripts/custom/models/person/personDetails.js")
+                .Include("~/Scripts/custom/components/person/personDetailsViewer.js")
+
+
+                .Include("~/Scripts/custom/utils/customEventProcessor.js")
+                .Include("~/Scripts/custom/utils/ajaxRequestProcessor.js")
+
+                .Include("~/Scripts/custom/main.js"));
         }
     }
 }

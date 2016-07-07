@@ -146,13 +146,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionResults\HttpBadRequestResult.cs" />
+    <Compile Include="ActionResults\SuccessJsonResult.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HomePageViewModel.cs" />
+    <Compile Include="Models\LogEvent\LogEventListViewModel.cs" />
+    <Compile Include="Models\Person\PersonDetailsViewModel.cs" />
+    <Compile Include="Models\Person\PersonListViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebRole.cs" />
   </ItemGroup>
@@ -166,6 +174,14 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\custom\components\person\personDetailsViewer.js" />
+    <Content Include="Scripts\custom\components\person\personList.js" />
+    <Content Include="Scripts\custom\main.js" />
+    <Content Include="Scripts\custom\models\person\basePersonModel.js" />
+    <Content Include="Scripts\custom\models\person\personDetails.js" />
+    <Content Include="Scripts\custom\models\person\personListItem.js" />
+    <Content Include="Scripts\custom\utils\ajaxRequestProcessor.js" />
+    <Content Include="Scripts\custom\utils\customEventProcessor.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -173,6 +189,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-3.4.0.debug.js" />
+    <Content Include="Scripts\knockout-3.4.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -188,13 +206,16 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Person\PersonListItem.cshtml" />
+    <Content Include="Views\Shared\Person\PersonDetailsViewer.cshtml" />
+    <Content Include="Views\Shared\Person\PersonList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Scripts\custom\components\event\" />
+    <Folder Include="Scripts\custom\models\event\" />
+    <Folder Include="Views\Event\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

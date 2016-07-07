@@ -1,0 +1,11 @@
+﻿<script type="text/html" id="personListComponentTemplate">
+    <div class="person-list">
+        <!-- ko foreach: persons -->
+        <div class="person-list__item">
+            <div data-bind="template: { name: 'personListItemTemplate', data: $data }"></div>
+        </div>
+        <!-- /ko -->
+    </div>
+</script>
+
+@Html.Partial("Person/PersonListItem")
