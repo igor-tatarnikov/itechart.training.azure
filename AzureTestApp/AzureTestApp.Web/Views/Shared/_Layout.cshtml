@@ -9,17 +9,23 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
+        <div class="container clearfix">
+            <div class="navbar-header col-md-7">
                 @Html.ActionLink("Azure Test App", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="col-md-5">
+                <div data-bind="template: { name: 'accountGrubberComponentTemplate', data: accountGrubber } "></div>
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Igor Tatarnikov - iTechArt - Azure Course</p>
+
+        <footer class="footer">
+            <hr />
+            <div class="container">
+                <p>&copy; @DateTime.Now.Year - Igor Tatarnikov - iTechArt - Azure Course</p>
+            </div>
         </footer>
     </div>
 

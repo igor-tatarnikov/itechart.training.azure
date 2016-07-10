@@ -1,0 +1,28 @@
+﻿<script type="text/html" id="accountGrubberComponentTemplate">
+    <div class="account-grubber">
+        <!-- ko if: isGrubModeOn -->
+        <div class="clearfix">
+            <div class="col-md-8 account-grubber__field-column">
+                <input type="text" placeholder="Account Id..."
+                       class="form-control"
+                       data-bind="textInput: accountId" />
+            </div>
+            <div class="col-md-4 account-grubber__controls-column">
+                <div class="pull-right">
+                    <a class="btn btn-default"
+                       data-bind="click: cancelGrubbing">Cancel</a>
+                    <a class="btn btn-primary" href="#"
+                       data-bind="css: { 'disabled': isAccountIdEmpty }, click: grub">Grub</a>
+                </div>
+            </div>
+        </div>
+        <!-- /ko -->
+
+        <!-- ko ifnot: isGrubModeOn -->
+        <div class="pull-right account-grubber__default-button-container">
+            <a class="btn btn-primary"
+               data-bind="click: switchToGrubMode">Add Person</a>
+        </div>
+        <!-- /ko -->
+    </div>
+</script>

@@ -165,15 +165,26 @@
     <Compile Include="WebRole.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\custom\components\account-grubber.css" />
+    <Content Include="Content\css\custom\components\person-details-viewer.css" />
+    <Content Include="Content\css\custom\components\person-list.css" />
+    <Content Include="Content\css\custom\components\player.css" />
+    <Content Include="Content\css\custom\utils.css" />
+    <Content Include="Content\css\plugins\bootstrap.css" />
+    <Content Include="Content\css\plugins\bootstrap.min.css" />
+    <Content Include="Content\css\custom\models\person\person-list-item.css" />
+    <Content Include="Content\images\audioIcons.png" />
+    <Content Include="Content\images\emptyAvatar.png" />
+    <Content Include="Content\images\emptyAvatarBig.png" />
+    <Content Include="Content\images\emptyAvatarSmall.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\css\custom\core.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\custom\components\grub\accountGrubber.js" />
     <Content Include="Scripts\custom\components\person\personDetailsViewer.js" />
     <Content Include="Scripts\custom\components\person\personList.js" />
     <Content Include="Scripts\custom\main.js" />
@@ -210,6 +221,8 @@
     <Content Include="Views\Shared\Person\PersonListItem.cshtml" />
     <Content Include="Views\Shared\Person\PersonDetailsViewer.cshtml" />
     <Content Include="Views\Shared\Person\PersonList.cshtml" />
+    <Content Include="Views\Shared\Components\AccountGrubber.cshtml" />
+    <Content Include="Views\Shared\Components\Player.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

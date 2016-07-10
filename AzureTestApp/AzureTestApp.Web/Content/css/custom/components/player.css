@@ -1,0 +1,36 @@
+﻿.player {
+
+}
+
+.player .player__controls,
+.player .player__track {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+
+.player .player__controls {
+
+}
+.player .player__controls--play {
+
+}
+.player .player__controls--pause {
+
+}
+.player .player__controls--previous {
+
+}
+.player .player__controls--next {
+
+}
+
+.player .player__track {
+
+}
+.player .player__track--artist {
+
+}
+.player .player__track--title {
+
+}

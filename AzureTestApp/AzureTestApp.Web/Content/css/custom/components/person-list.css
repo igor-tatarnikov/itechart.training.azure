@@ -1,0 +1,10 @@
+﻿.person-list {
+    overflow: hidden;
+
+    padding: 6px 0px 14px 0px;
+
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}

@@ -1,0 +1,32 @@
+﻿html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    margin: 0px;
+    padding: 0px;
+    direction: ltr;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 11px;
+    line-height: 1.182;
+    font-weight: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    padding-top: 50px;
+    margin-bottom: 60px;
+}
+
+.navbar.navbar-fixed-top .navbar-header {
+    padding-left: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    max-width: 1170px;
+}

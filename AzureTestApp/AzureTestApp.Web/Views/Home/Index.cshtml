@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col-md-7">
-        <h2>Persons</h2>
+        <h3>Persons</h3>
         <div data-bind="template: { name: 'personListComponentTemplate', data: personList }"></div>
     </div>
     <div class="col-md-5">
@@ -14,11 +14,7 @@
         </div>
 
         <div>
-            <h3>Player</h3>
-        </div>
-
-        <div>
-            <h3>Add Button</h3>
+            <div data-bind="template: { name: 'playerComponentTemplate', data: {} }"></div>
         </div>
 
         <div>
@@ -29,6 +25,8 @@
 
 @Html.Partial("Person/PersonList")
 @Html.Partial("Person/PersonDetailsViewer")
+@Html.Partial("Components/AccountGrubber")
+@Html.Partial("Components/Player")
 
 @section scripts
 {
@@ -42,6 +40,10 @@
 
         azureTestApp.params.personDetailsViewer = {
             getUrl: '@Url.Action("GetPersonDetails", "Person")'
+        };
+
+        azureTestApp.params.accountGrubber = {
+            grubbingUrl: '@Url.Action("AnalysePerson", "Person")'
         };
     </script>
 

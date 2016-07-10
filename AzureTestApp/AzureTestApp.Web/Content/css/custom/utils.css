@@ -1,0 +1,15 @@
+﻿.fl-l {
+    float: left;
+}
+
+.clear_fix {
+    display: block;
+}
+
+.clear_fix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

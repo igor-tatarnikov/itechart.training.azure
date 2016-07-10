@@ -28,6 +28,34 @@ namespace AzureTestApp.Web.Controllers
                     AvatarUrl = null
                 });
 
+                personList.Add(new PersonListViewModel
+                {
+                    FirstName = "Eugene",
+                    LastName = "Ivanov",
+                    AvatarUrl = null
+                });
+
+                personList.Add(new PersonListViewModel
+                {
+                    FirstName = "Kate",
+                    LastName = "Moor",
+                    AvatarUrl = null
+                });
+
+                personList.Add(new PersonListViewModel
+                {
+                    FirstName = "Eugene",
+                    LastName = "Ivanov",
+                    AvatarUrl = null
+                });
+
+                personList.Add(new PersonListViewModel
+                {
+                    FirstName = "Kate",
+                    LastName = "Moor",
+                    AvatarUrl = null
+                });
+
                 return new SuccessJsonResult(personList);
             }
             catch (Exception ex)

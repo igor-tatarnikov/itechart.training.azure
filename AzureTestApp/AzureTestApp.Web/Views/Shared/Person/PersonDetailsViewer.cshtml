@@ -1,18 +1,21 @@
 ﻿<script type="text/html" id="personDetailsViewerComponentTemplate">
-    <div class="person-details">
-        <div class="col-md-7">
-            <div class="person-details__avatar">
-                <img data-bind="attr: { 'src': avatarUrl }" />
-            </div>
+    <div class="person-details-viewer">
+        <div class="col-md-6 person-details-viewer__avatar">
+            <!-- ko if: isAvatarAvailable -->
+            <img data-bind="attr: { 'src': avatarUrl }" />
+            <!-- /ko -->
+            <!-- ko ifnot: isAvatarAvailable -->
+            <img src="Content/images/emptyAvatarBig.png" />
+            <!-- /ko -->
         </div>
-        <div class="col-md-5">
-            <div class="person-details__bio">
-                <div class="person-details__bio--full-name">
+        <div class="col-md-6">
+            <div class="person-details-viewer__bio">
+                <div class="person-details-viewer__bio--full-name">
                     <span data-bind="text: fullName"></span>
                 </div>
-                <div class="person-details__bio--badges">
+                <div class="person-details-viewer__bio--badges">
                 </div>
-                <div class="person-details__bio--statistics">
+                <div class="person-details-viewer__bio--statistics">
                     <div>
                         <span>Tracks found: </span>
                         <span data-bind="text: totalTracksCount"></span>

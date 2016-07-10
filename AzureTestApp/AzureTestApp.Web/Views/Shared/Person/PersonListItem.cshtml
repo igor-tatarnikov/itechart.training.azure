@@ -1,11 +1,21 @@
 ﻿<script type="text/html" id="personListItemTemplate">
     <div class="person-list-item"
          data-bind="click: select">
-        <div class="person-list-item__avatar">
-            <img data-bind="attr: { 'src': avatarUrl }" />
-        </div>
-        <div class="person-list-item__name">
-            <span data-bind="text: fullName"></span>
+        <div>
+            <a href="#" class="person-list-item__avatar">
+                <!-- ko if: isAvatarAvailable -->
+                <img data-bind="attr: { 'src': avatarUrl }" />
+                <!-- /ko -->
+
+                <!-- ko ifnot: isAvatarAvailable -->
+                <img src="Content/images/emptyAvatar.png" />
+                <!-- /ko -->
+            </a>
+            <div class="person-list-item__name">
+                <a herf="#" class="person-list-item__name--link">
+                    <span data-bind="text: fullName"></span>
+                </a>
+            </div>
         </div>
         <div class="person-list-item__badges">
 

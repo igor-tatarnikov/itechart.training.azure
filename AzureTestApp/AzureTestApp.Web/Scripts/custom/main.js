@@ -6,6 +6,7 @@ azureTestApp.HomePageModel = function () {
     //#region Properties
     self.personList = new azureTestApp.components.person.PersonList();
     self.personDetailsViewer = new azureTestApp.components.person.PersonDetailsViewer();
+    self.accountGrubber = new azureTestApp.components.grub.AccountGrubber();
     //#endregion
 
     //#region Private functions
@@ -19,6 +20,12 @@ azureTestApp.HomePageModel = function () {
         var personDetailsViewerConfiguration = options.personDetailsViewer;
 
         self.personDetailsViewer.init(personDetailsViewerConfiguration);
+    };
+
+    var initAccountGrubberComponent = function (options) {
+        var accountGrubberConfiguration = options.accountGrubber;
+
+        self.accountGrubber.init(accountGrubberConfiguration);
     };
     //#endregion
 

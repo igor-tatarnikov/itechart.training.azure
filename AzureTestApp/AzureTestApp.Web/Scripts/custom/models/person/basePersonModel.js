@@ -22,6 +22,11 @@ azureTestApp.models.person.BasePersonModel = function () {
 
         return firstName + ' ' + lastName;
     });
+
+    self.isAvatarAvailable = ko.computed(function () {
+        var imageUrl = self.avatarUrl();
+        return imageUrl !== undefined && imageUrl !== null;
+    });
     //#endregion
 
     //#region Functions

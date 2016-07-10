@@ -1,0 +1,11 @@
+﻿.account-grubber {
+    margin-top: 8px;
+}
+
+.account-grubber .account-grubber__field-column {
+    padding-left: 0;
+}
+.account-grubber .account-grubber__controls-column,
+.account-grubber .account-grubber__default-button-container {
+    padding-right: 0;
+}

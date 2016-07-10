@@ -1,0 +1,28 @@
+﻿.person-details-viewer {
+    min-height: 200px;
+}
+
+.person-details-viewer .person-details-viewer__avatar {
+    padding-left: 0;
+}
+.person-details-viewer .person-details-viewer__bio {
+
+}
+.person-details-viewer .person-details-viewer__bio--full-name,
+.person-details-viewer .person-details-viewer__bio--badges,
+.person-details-viewer .person-details-viewer__bio--statistics {
+    padding-bottom: 12px;
+    max-width: 385px;
+    overflow: hidden;
+}
+.person-details-viewer .person-details-viewer__bio--full-name {
+    color: #45688E;
+    font-size: 1.09em;
+    font-weight: bold;
+}
+.person-details-viewer .person-details-viewer__bio--badges {
+
+}
+.person-details-viewer .person-details-viewer__bio--statistics {
+
+}

@@ -20,8 +20,16 @@ namespace AzureTestApp.Web
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/css/plugins/bootstrap.css",
+                      "~/Content/css/custom/core.css",
+                      "~/Content/css/custom/utils.css",
+
+                      "~/Content/css/custom/components/person-list.css",
+                      "~/Content/css/custom/models/person/person-list-item.css",
+
+                      "~/Content/css/custom/components/person-details-viewer.css",
+
+                      "~/Content/css/custom/components/account-grubber.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/ko")
                 .Include("~/Scripts/knockout-{version}.js"));
@@ -35,6 +43,8 @@ namespace AzureTestApp.Web
 
                 .Include("~/Scripts/custom/models/person/personDetails.js")
                 .Include("~/Scripts/custom/components/person/personDetailsViewer.js")
+
+                .Include("~/Scripts/custom/components/grub/accountGrubber.js")
 
 
                 .Include("~/Scripts/custom/utils/customEventProcessor.js")
